@@ -497,7 +497,7 @@ span.cm-quote.cm-strong {
 /* Padding and radius around blockquotes */
 .markdown-rendered blockquote,
 .markdown-source-view.is-live-preview .HyperMD-quote {
-	padding: var(--size-4-4);
+	padding: var(--size-4-4) var(--size-4-6) var(--size-4-4) var(--size-4-12);
 }
 
 .markdown-rendered blockquote {
