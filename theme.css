@@ -738,3 +738,32 @@ sub {
 .source pre br {
 	display: none;
 }
+
+/* optional list classes
+ * IA1ai makes lists go from:
+ * Upper Roman -> Upper Alpha -> Number -> Lower Alpha -> Lower Roman
+ */
+
+.list-IA1ai ol {
+	list-style-type: upper-roman;
+}
+
+.list-IA1ai ol ol {
+	list-style-type: upper-alpha;
+}
+
+.list-IA1ai ol ol ol {
+	list-style-type: decimal;
+}
+
+.list-IA1ai ol ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.list-IA1ai ol ol ol ol ol {
+	list-style-type: lower-roman;
+}
+
+.list-IA1ai .footnotes ol {
+	list-style-type: numeric;
+}
