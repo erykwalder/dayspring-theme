@@ -726,3 +726,15 @@ sub {
 .source .cm-hmd-frontmatter {
 	font-size: 0.8em;
 }
+
+.altnote1 pre,
+.scripture pre,
+.source pre {
+	font-size: 1rem;
+}
+
+.altnote1 pre br,
+.scripture pre br,
+.source pre br {
+	display: none;
+}
