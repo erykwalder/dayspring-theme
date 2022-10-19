@@ -582,6 +582,10 @@ em strong {
 	padding: var(--size-4-4) var(--size-4-6) var(--size-4-4) var(--size-4-12);
 }
 
+.markdown-source-view.is-live-preview .HyperMD-quote + .HyperMD-quote {
+	padding: 0 var(--size-4-6) var(--size-4-4) var(--size-4-12);
+}
+
 .markdown-rendered blockquote {
 	border-left: 0;
 	border-radius: var(--radius-s);
