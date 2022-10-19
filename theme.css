@@ -696,6 +696,11 @@ sub {
 	color: var(--text-normal);
 }
 
+/* don't double background in code block */
+.markdown-rendered pre code {
+	background-color: transparent;
+}
+
 /* optional altnote1 cssclass for notes */
 .altnote1,
 .scripture,
@@ -720,9 +725,4 @@ sub {
 .scripture .cm-hmd-frontmatter,
 .source .cm-hmd-frontmatter {
 	font-size: 0.8em;
-}
-
-/* don't double background in code block */
-.markdown-rendered pre code {
-	background-color: transparent;
 }
