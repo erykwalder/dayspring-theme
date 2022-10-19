@@ -554,13 +554,20 @@ h6 .heading-collapse-indicator {
 	padding: var(--embed-padding);
 }
 
-/* Prioritize em and bold over blockquote */
+/* Prioritize em and strong over blockquote */
 span.cm-quote.cm-em {
 	color: var(--italic-color);
 }
 
 span.cm-quote.cm-strong {
 	color: var(--bold-color);
+}
+
+/* Prioritize em over strong */
+.cm-strong.cm-em,
+strong em,
+em strong {
+	color: var(--italic-color);
 }
 
 /* Internal link font weight */
