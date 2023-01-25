@@ -37,7 +37,7 @@ This theme uses two fonts:
 -   [Crimson Pro](https://fonts.google.com/specimen/Crimson+Pro)
 -   [Figtree](https://fonts.google.com/specimen/Figtree)
 
-Although the theme will attempt to use google's font API to source them if they are not local, it is recommended to download them.
+The fonts are included as variable weight fonts in the CSS, but it may help to install them locally.
 
 ## Other Screenshots
 
