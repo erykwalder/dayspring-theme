@@ -309,10 +309,12 @@ em strong {
 
 /* Style embeds to look like blockquotes */
 .markdown-embed {
+	overflow: hidden;
 	border-radius: var(--radius-s);
 	padding: 0;
 }
 .markdown-embed-content {
+	overflow: hidden;
 	border-radius: var(--radius-s);
 }
 .markdown-reading-view .internal-embed {
