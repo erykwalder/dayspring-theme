@@ -248,6 +248,11 @@ h6 .heading-collapse-indicator {
 	padding: var(--embed-padding);
 }
 
+/* Fix canvas padding, since all canvases are embeds */
+.canvas-node-content.markdown-embed .markdown-preview-sizer {
+	padding: 0 var(--size-4-2);
+}
+
 /* Prioritize em and strong over blockquote */
 span.cm-quote.cm-em {
 	color: var(--italic-color);
@@ -317,7 +322,8 @@ em strong {
 	overflow: hidden;
 	border-radius: var(--radius-s);
 }
-.markdown-reading-view .internal-embed {
+.markdown-reading-view .internal-embed,
+.markdown-preview-view .internal-embed {
 	margin-bottom: 1.5em;
 }
 
@@ -415,6 +421,19 @@ sub {
 	--inline-title-variant: small-caps;
 	font-size: 20px;
 	background: var(--color-base-25);
+}
+
+/* fix canvas coloring */
+.canvas-node.is-themed .altnote1,
+.canvas-node.is-themed .scripture,
+.canvas-node.is-themed .source,
+.canvas-node.is-themed .markdown-embed,
+.canvas-node.is-themed blockquote {
+	background: rgba(var(--canvas-color), 0.05);
+}
+
+.canvas-node-content.markdown-embed {
+	background: var(--background-primary);
 }
 
 .altnote1 .cm-hmd-frontmatter,
