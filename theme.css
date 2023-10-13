@@ -144,8 +144,8 @@ body {
 	--color-base-100: hsl(50, 13%, 18%);
 	--color-blue: hsl(199, 42%, 45%);
 	--color-blue-rgb: 67, 132, 163;
-	--color-purple: hsl(307, 26%, 40%);
-	--color-purple-rgb: 129, 75, 122;
+	--color-purple: hsl(307, 39%, 34%);
+	--color-purple-rgb: 121, 53, 113;
 	--color-green: hsl(80, 45%, 45%);
 	--color-green-rgb: 132, 166, 63;
 	--color-red: hsl(346, 65%, 44%);
@@ -206,7 +206,7 @@ body {
 	--nav-item-background-active: var(--color-accent);
 	--nav-item-size: var(--font-ui-medium);
 
-	--embed-background: var(--alpha-background); /*var(--alpha-background);*/
+	--embed-background: var(--alpha-background);
 
 	--code-property: var(--color-blue);
 	--code-function: var(--color-orange);
