@@ -215,6 +215,7 @@ body {
 
 /* Every p is margin block start & end, so they're useless */
 
+.markdown-rendered p,
 p {
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -236,6 +237,10 @@ h6,
 
 h6 .heading-collapse-indicator {
 	display: none;
+}
+
+.markdown-rendered div:has(> :is(p, pre, table, ul, ol)) + div > h6 {
+	margin-top: 0;
 }
 
 /* For h6's to work in embeds, embed padding has to change */
@@ -301,10 +306,6 @@ em strong {
 .math {
 	color: var(--color-orange);
 	font-size: 1.2em;
-}
-
-.markdown-source-view.mod-cm6 .cm-content > .math-block {
-	margin: 1em 0 !important;
 }
 
 /* Hide frontmatter in preview */
@@ -452,6 +453,11 @@ sub {
 .scripture pre br,
 .source pre br {
 	display: none;
+}
+
+/* fix table margin in live view */
+.cm-table-widget .markdown-rendered table {
+	margin-block-start: 0;
 }
 
 /* optional list classes
