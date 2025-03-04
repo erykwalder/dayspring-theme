@@ -83,7 +83,7 @@ body {
 	--font-ui-small: 14px;
 	--font-ui-smaller: 13px;
 
-	--blockquote-border-thickness: 2px;
+	--blockquote-border-thickness: 0;
 	--blockquote-border-color: var(--color-purple);
 
 	--h1-size: 2.5em;
@@ -120,6 +120,8 @@ body {
 	--embed-border-left: 0;
 	--embed-padding: var(--size-4-4) var(--size-4-8) var(--size-4-4)
 		var(--size-4-12);
+	--embed-border-start: 0;
+	--embed-border-end: 0;
 
 	--footnote-size: var(--font-small);
 }
@@ -239,7 +241,7 @@ h6 .heading-collapse-indicator {
 	display: none;
 }
 
-.markdown-rendered div:has(> :is(p, pre, table, ul, ol)) + div > h6 {
+.markdown-rendered div:has(> :is(p, pre, table, ul, ol)) + div > h6, .markdown-rendered + div > h6, .markdown-rendered :is(p,pre,table,ul,ol) + h6, .markdown-rendered div:is(.el-p,.el-pre,.el-table,.el-ul,.el-ol) + div > h6 {
 	margin-top: 0;
 }
 
